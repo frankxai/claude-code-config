@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": [
+      "Read\nWrite\nEdit\nMultiEdit\nView\nNotebookRead\nNotebookEdit\nImageRead\nLS\nGlob\nGrep\nRipgrep\nWebFetch\nWebSearch\nTask\nSlashCommand\nSkill\nTodoWrite\nExitPlanMode\nAskUserQuestion\nBash(*)",
+      "mcp__*"
+    ],
+    "deny": [
+      "Bash(rm -rf /)\nBash(rm -rf /*)\nBash(sudo rm -rf *)\nBash(git push --force *)\nBash(git push -f *)\nBash(sudo shutdown *)\nBash(sudo reboot *)\nBash(sudo poweroff *)\nBash(sudo halt *)\nBash(mkfs.*)\nBash(dd if=*)\nBash(:(){ :|:& };:)",
+      "Bash(curl * | sh)\nBash(curl * | bash)\nBash(wget * | sh)\nBash(wget * | bash)"
+    ]
+  },
+  "alwaysThinkingEnabled": true,
+  "permissionRules": [
+    {
+      "tool": "mcp__slack__slack_post_message",
+      "permission": "ask",
+      "comment": "Ask before posting new Slack messages (but allow reading)"
+    },
+    {
+      "tool": "mcp__github__create_pull_request",
+      "permission": "ask",
+      "comment": "Ask before creating PRs (safety check)"
+    },
+    {
+      "tool": "mcp__github__merge_pull_request",
+      "permission": "ask",
+      "comment": "Ask before merging PRs (safety check)"
+    },
+    {
+      "tool": "mcp__github__push_files",
+      "permission": "ask",
+      "comment": "Ask before pushing to GitHub (safety check)"
+    },
+    {
+      "tool": "mcp__*",
+      "permission": "allow",
+      "comment": "Allow all other MCP tools by default - maximum autonomy"
+    }
+  ],
+  "mcpManagement": {
+    "defaultBehavior": "disabled",
+    "enableOnMention": true,
+    "disableWhenIdle": true,
+    "idleTimeoutMinutes": 30
+  }
+}

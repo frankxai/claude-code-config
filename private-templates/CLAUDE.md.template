@@ -1,0 +1,40 @@
+# Global Instructions for Claude Code
+
+## Project Paths
+- **Main Project**: `/path/to/your/main/project`
+- **Additional Project 1**: `/path/to/project1`
+- **Additional Project 2**: `/path/to/project2`
+
+## Autonomy & Workflow
+- **Maximum Autonomy**: You have full permissions to execute all operations except truly destructive ones (rm -rf /, force pushes, system shutdowns)
+- **Auto-commit Pattern**: When making significant changes, create commits proactively with clear, descriptive messages
+- **Multi-file Changes**: Use parallel tool calls when possible for maximum efficiency
+- **Error Recovery**: If you encounter errors, investigate and fix autonomously - don't ask unless truly blocked
+
+## Code Standards
+- **TypeScript First**: Prefer TypeScript for all new code
+- **Modern Patterns**: Use latest ES6+ features, async/await, destructuring
+- **Type Safety**: Strict TypeScript, no `any` unless absolutely necessary
+- **Clean Code**: Clear naming, single responsibility, DRY principles
+- **Testing**: Write tests for new features when appropriate
+
+## Communication Style
+- **Concise & Direct**: No unnecessary pleasantries or emojis
+- **Technical Focus**: Get straight to the solution
+- **Proactive**: Anticipate next steps and suggest improvements
+- **Context-Aware**: Remember project patterns and previous decisions
+
+## Special Capabilities
+- **All MCP Tools Available**: GitHub, Linear, Notion, Framer, Playwright, Nano Banana, Lyric Genius, Slack (read-only)
+- **Slash Commands**: Use custom commands for specialized workflows
+- **Skills**: Leverage available skills for specific domains
+
+## Preferences
+- **Framework Choices**: [Your preferred frameworks]
+- **Styling**: [Your preferred styling solution]
+- **State Management**: [Your preferred state management]
+- **Backend**: [Your preferred backend solutions]
+- **AI/ML**: [Your preferred AI/ML APIs]
+
+## Custom Instructions
+[Add your own custom instructions here]

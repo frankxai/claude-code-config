@@ -1,0 +1,125 @@
+{
+  "name": "starlight-intelligence-system",
+  "version": "1.0.0",
+  "description": "The AI Orchestration Platform for Claude Code - Transform Claude into a Multi-Agent Superintelligence",
+  "author": "FrankX (Oracle Senior Solutions Architect)",
+  "license": "SEE LICENSE IN license/LICENSE.md",
+  "homepage": "https://starlight-intelligence.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankx/starlight-intelligence-system"
+  },
+  "keywords": [
+    "claude-code",
+    "ai-agents",
+    "productivity",
+    "automation",
+    "mcp-servers",
+    "ai-orchestration",
+    "multi-agent-system"
+  ],
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "main": "installer.sh",
+  "scripts": {
+    "install": "./installer.sh",
+    "activate": "./license/activate-license.sh",
+    "test": "echo \"Run integration tests\"",
+    "validate": "echo \"Validate installation\""
+  },
+  "productInfo": {
+    "price": "$497",
+    "tier": "premium-individual",
+    "includes": {
+      "agents": {
+        "tier1": 4,
+        "tier2": 8,
+        "total": 12
+      },
+      "templates": 8,
+      "commands": 5,
+      "mcpConfigs": 4,
+      "documentation": "comprehensive",
+      "community": "private-discord",
+      "updates": "lifetime"
+    },
+    "upgrades": {
+      "team-license": {
+        "price": "$297",
+        "users": 5
+      },
+      "custom-agents": {
+        "price": "$997",
+        "includes": "3 custom agents"
+      },
+      "done-for-you": {
+        "price": "$497",
+        "includes": "1-on-1 implementation call"
+      },
+      "white-label": {
+        "price": "$2,997",
+        "includes": "rebrand and resell rights"
+      }
+    }
+  },
+  "systemRequirements": {
+    "claudeCode": ">=1.0.0",
+    "claudeSubscription": ["pro", "max", "enterprise"],
+    "os": ["macOS", "Linux", "Windows (WSL)"],
+    "diskSpace": "~50MB",
+    "mcpServers": "2-3 minimum recommended"
+  },
+  "contents": {
+    "agents": {
+      "tier1-orchestrators": [
+        "strategic-architect",
+        "creative-alchemist",
+        "business-oracle",
+        "integration-specialist"
+      ],
+      "tier2-specialists": [
+        "full-stack-developer",
+        "content-creator",
+        "data-analyst",
+        "devops-engineer",
+        "product-manager",
+        "ux-designer",
+        "marketing-specialist",
+        "technical-writer"
+      ]
+    },
+    "commands": [
+      "dev-mode",
+      "content-mode",
+      "strategy-mode",
+      "research-mode",
+      "council"
+    ],
+    "templates": {
+      "agent-templates": 8,
+      "mcp-configs": 4,
+      "permission-presets": 3
+    },
+    "documentation": [
+      "getting-started",
+      "agent-reference",
+      "customization-guide",
+      "troubleshooting",
+      "best-practices"
+    ],
+    "examples": [
+      "developer-workflow",
+      "content-creator-workflow",
+      "consultant-workflow",
+      "agency-workflow"
+    ]
+  },
+  "support": {
+    "email": "support@starlight-intelligence.com",
+    "discord": "https://discord.starlight-intelligence.com",
+    "docs": "https://docs.starlight-intelligence.com",
+    "responseTime": "< 24 hours"
+  },
+  "guarantee": "30-day money-back guarantee"
+}

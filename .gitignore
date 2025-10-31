@@ -1,0 +1,32 @@
+# Private/Local Files
+.credentials.json
+settings.local.json
+CLAUDE.md
+history.jsonl
+
+# Runtime/Session Data
+file-history/
+session-env/
+shell-snapshots/
+debug/
+todos/
+statsig/
+plugins/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Personal/Private Configs (use templates instead)
+private/
+*.local.*
+.env
+.env.local
+
+# Node modules if scripts use them
+node_modules/
